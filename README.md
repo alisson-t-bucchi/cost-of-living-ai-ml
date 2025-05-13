@@ -1,10 +1,10 @@
-💹 World cities cost of living predictor using AI & Machine Learning. 
+# 💹 World cities cost of living predictor using AI & Machine Learning. 
 
 This is an interactive application developed with Streamlit, Scikit-learn and Matplotlib libraries and .csv files. 
 
 The objective is predict the cost of living in some country and citie from Kaggle from Kaggle (link [here]("https://www.kaggle.com/datasets/mvieira101/global-cost-of-living")) dataset and predict this costs with mathematical analysis like Linear Regression and Mean Square error.
 
-📝 Features: 
+## 📝 Features: 
 - Extract values from .csv dataset for a specific a country and city.
   - 💰 Estimated monthly cost 
   - 📈 Average net salary
@@ -12,32 +12,34 @@ The objective is predict the cost of living in some country and citie from Kaggl
 - Generate a graphic bar comparing Estimated monthly cost and Average net salary between cities from a selected country.
 - Predict values of costs of living using Linear Regression 
 
-🐍 Requirements: make sure you have the following installed on your machine:
+## 🐍 Requirements:
+
+Make sure you have the following installed on your machine:
 - Python 3.8 or higher 
 - Libraries listed in requirements.txt
 
-🚀 Installation
-Clone the repository or download the files.
+## 🚀 Installation:
+1. Clone the repository or download the files.
 ```
 git clone <repository-url>
 cd <repository-name>
 ```
-1. Install the dependencies.
+2. Install the dependencies.
 ```
 pip install -r requirements.txt
 ```
 Ensure that the cost-of-living.csv are into data folder the same directory as the code.
 
-📊 Data Structure:
+## 📊 Data Structure:
 - This dataset contains information about the cost of living in almost 5000 cities across the world. The data were gathered by scraping Numbeo's website (https://www.numbeo.com). 
 - The cost-of-living.csv dataset contains a data dictionary with a 55 columns, description and values.
 See the 6 first collumns in this screenshot below:
 
 ![img.png](img.png)
 
-📁 Directory structure:
+## 📁 Directory structure:
 
-This aplication have modulate organization like the structure below: 
+This application have modulate organization like the structure below: 
 ```
 cost_of_living_app/
 ├── app.py                     # main application with Streamlit
@@ -49,13 +51,13 @@ cost_of_living_app/
 │   └── visualization.py       # graphic generation function
 ```
 
-🛞 Usage
-Run the Streamlit application.
+## 🛞 Usage
+Run the Streamlit application: 
 ```
 streamlit run <file-name>.py
 ```
 
-✏️ Code and ML trainning model: 
+## ✏️ Code and ML trainning model: 
 
 This app was organised in module, thus, see the full code in each file. 
 Because of this, it's important show some aspects of ML trainning model here, see code below:  
@@ -83,6 +85,8 @@ def train_cost_model(df: pd.DataFrame):
     return model, mse
 ```
 
-🗒️ License:
-
+## 🗒️ License:
 This project is licensed under the MIT License. See the LICENSE file for more information.
+
+## 💡 Credits
+Developed with 💖 by Alisson T. Bucchi. 
