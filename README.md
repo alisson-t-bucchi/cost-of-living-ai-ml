@@ -2,7 +2,7 @@
 
 This is an interactive application developed with Streamlit, Scikit-learn and Matplotlib libraries and .csv files. 
 
-The objective is predict the cost of living in some country and cities from [Kaggle]("https://www.kaggle.com/datasets/mvieira101/global-cost-of-living") dataset and predict this costs with mathematical analysis like Linear Regression and Mean Square error.
+The objective is predict the cost of living in some country and cities from [Kaggle](https://www.kaggle.com/datasets/mvieira101/global-cost-of-living) dataset and predict this costs with mathematical analysis like Linear Regression and Mean Square error.
 
 ## 📝 Features: 
 - Extract values from .csv dataset for a specific a country and city.
