@@ -6,7 +6,7 @@ def plot_cost_vs_salary(df):
         .sort_values("Estimated_Monthly_Cost", ascending=False)\
         .plot(kind="bar", ax=ax)
 
-    plt.title("Custo Estimado vs Salário Médio")
+    plt.title("Estimated Cost vs Average Salary")
     plt.ylabel("USD")
     plt.tight_layout()
     return fig
