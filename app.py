@@ -9,7 +9,7 @@ from utils.analysis import (
 from utils.visualization import plot_cost_vs_salary
 from utils.model import train_cost_model
 
-st.set_page_config(page_title="Custo de Vida + IA", layout="wide")
+st.set_page_config(page_title="Global cost of living predictor", layout="wide")
 st.title("📊 Cost of Living Analyses and Forecasts by City")
 
 df = load_and_prepare_data("data/cost-of-living.csv")
@@ -53,6 +53,8 @@ compare_df = get_comparison_dataframe(df, selected_country)
 
 if not compare_df.empty:
     st.pyplot(plot_cost_vs_salary(compare_df))
+    st.subheader("📈 Cost to Salary Ratio:")
+    st.write("⚠️ Values > 1.0 indicate expensive(s) city(ies)!")
     st.dataframe(compare_df.sort_values("Cost_to_Salary_Ratio")[["Cost_to_Salary_Ratio"]])
 else:
     st.warning("❗ No cities with enough dates to compare!")
